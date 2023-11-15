@@ -1,0 +1,34 @@
+i<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ciao Mondo che Ruota</title>
+    <style>
+        @keyframes ruota {
+            from {
+                transform: rotate(0deg);
+            }
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .ruotante {
+            font-size: 2em;
+            animation: ruota 5s linear infinite; /* Ruota per 5 secondi in modo lineare e infinito */
+        }
+    </style>
+</head>
+<body>
+    <div class="ruotante">Ciao Mondo</div>
+</body>
+</html>
